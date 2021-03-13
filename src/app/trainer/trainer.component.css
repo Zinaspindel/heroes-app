@@ -1,0 +1,52 @@
+.profile-container{
+    position: relative;
+    height: 100%;
+}
+.background {
+    background-image: url('src\assets\backgrounds\rlNen6Z.jpg');
+    background-size:cover;
+    position: absolute;
+    top:0;
+    z-index: -1;
+    height: 1080px;
+    width:100%;
+}
+.shadow{
+    background-color: rgba(2, 2, 2, 0.5);
+    backdrop-filter: blur(1.5px) saturate(100%);
+    height: 869px;
+    width:100%;
+    z-index: 1;
+    position: absolute;
+}
+.col {
+    background-color: rgb(202, 226, 233); 
+    border: 1px solid black;
+    margin-right: 1vw;
+    height: 77vh;
+}
+h2, #headline {
+    padding: 0;
+    text-align: center;
+    font-family: 'Bitter', serif;
+    color:rgb(44, 42, 42);
+}
+h2 {
+    margin: 0 auto;
+    padding-top:1vh;
+}
+#headline{
+    font-size: larger;
+}
+.alert{
+    top: 30px;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    z-index: 3;
+    background-color:rgb(207, 69, 69);
+    position: absolute;
+    text-align: center;
+}

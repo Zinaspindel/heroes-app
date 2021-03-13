@@ -1,0 +1,57 @@
+.hero-container{
+    padding:0;
+    z-index: 3;
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 3%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Shippori Mincho', serif;
+}
+.button-container {
+    padding-top: 20px;
+    text-align: center;
+}
+span {
+    width: 95%;
+    background-color: rgb(61, 59, 59);
+    border-color: rgb(61, 59, 59);
+}
+img {
+    margin: 0 auto;
+    height: 300px;
+    width: 200px;
+    padding: 0;
+    z-index: 1;
+}
+.detail-container{
+    height:30px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.detail{
+    width: 40%;
+    padding-left: 1vw;
+    padding-right: 5px;
+    font-weight: 500;
+    color:brown;
+}
+.larger {
+   height: 50px;
+}
+#hero-name {
+    position: absolute;
+    left: 38.5%;
+    font-size:x-large;
+    font-weight: 500;
+}
+.details-container{
+    padding:0;
+    margin: 0 auto;
+    width: 94%;
+    z-index: 1;
+}
+

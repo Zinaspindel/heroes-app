@@ -1,0 +1,38 @@
+<div class="hero-container">
+    <img src="{{hero.imgPath}}"
+        alt="{{hero.name}}"> 
+    <p id="hero-name">{{hero.name}}</p>
+    <!-- <hr> -->
+    <div class="details-container">
+        <div class="detail-container">
+            <p class="detail">Ability:</p>
+            <p class= "hero-details"*ngIf="hero.ability">Attacker</p>
+            <p class= "hero-details"*ngIf="!hero.ability">Defender</p>
+        </div>
+        <div class="detail-container larger">
+            <p class="detail ">Starting Training Day:</p>
+            <p class="hero-details"> {{hero.startingTrainingDate}}</p>
+        </div>
+        <div class="detail-container smaller">
+            <p class="detail">Suit Colors:</p>
+            <p class= "col hero-details" *ngFor="let color of hero.suitColors">
+            {{color}}
+            </p>
+        </div>
+        <div class="detail-container">
+            <p class="detail">Starting Power:</p>
+            <p class= "hero-details"> {{hero.startingPower}}</p>
+        </div>
+        <div class="detail-container">
+            <p class="detail">Current Power:</p>
+            <p class= "hero-details"> {{hero.currentPower}}</p>
+        </div>
+        <div class="detail-container larger">
+            <p class="detail">Times Trained Today:</p>
+            <p class= "hero-details"> {{hero.timesTrainedToday.length}}</p>
+        </div>
+        <div class="button-container">
+            <span (click)="trainHero(hero)" class="btn btn-primary">Train Hero!</span>
+        </div>
+    </div>
+</div>

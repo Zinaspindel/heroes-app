@@ -1,0 +1,16 @@
+.logo {
+    font-size: 10vh;
+    text-align: center;
+    padding-top: 10%;
+    font-weight: 500;
+}
+.links-container{
+    margin-top:4vh;
+    width:100%;
+    text-align: center;
+}
+a{
+    color: black;
+    font-size: 3vh;
+    padding-bottom: 4vh;
+}

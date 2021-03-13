@@ -1,0 +1,40 @@
+<div class="background"></div>
+    <div class="auth-form-container">
+        <div class="row">
+                <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+                    <h1>{{ isLogin ? 'Login' : 'Sign Up'}}</h1>
+                    <div class="inputs">
+                        <div class="form-group" *ngIf="!isLogin">
+                            <input type="text" class="form-group" required ngModel  name="username" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-group" required ngModel email name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-group" 
+                                required 
+                                ngModel 
+                                name="password"
+                                minlength="8"
+                                pattern="^(?=.*[A-Z])(?=.*\d)(?=.*\W)[A-Z\d\W]{8,}$"
+                                #password="ngModel"
+                                placeholder="Password"><br>
+                        </div>
+                        <div class="alert" *ngIf="error"> {{ error }}</div>
+                        <div class="alert" *ngIf="!password.valid && password.touched">Password must be atleast 8 digits with capital letters and digits</div>
+                        
+                        </div>
+                        <div class="controls">
+                            <p *ngIf="isLogin" (click)="changeAuthMode(f)">Not a member? Sign up!</p>
+                            <p *ngIf="!isLogin" (click)="changeAuthMode(f)">Already a member? login here</p>
+
+                        <div class="btn-container">
+                                <button type="submit" class="btn btn-primary" *ngIf="isLogin" >Login</button>
+                                <button type="submit" class="btn btn-primary" *ngIf="!isLogin" >Sign Up</button>
+                        </div>  
+                    </div>
+                </form>
+        </div>
+    </div>
+
+

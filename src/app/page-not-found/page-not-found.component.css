@@ -1,0 +1,16 @@
+.background {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    top:0;
+    background: url("/assets/backgrounds/thumb-1920-72604.jpg");
+}
+h1 {
+    text-align: center;
+    margin: 3vh auto;
+    font-family: 'Bitter', serif;
+    color: white;
+    background-color: black;
+    width: 300px;
+}

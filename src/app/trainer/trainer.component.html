@@ -1,0 +1,13 @@
+<div class="background"></div>
+<div class="profile-container">
+    <div class="shadow" *ngIf="showHero" (click)="exitHero()"></div>
+    <h2>Welcome trainer {{trainer.username}}</h2><br>
+    <p id="headline">It's time to train your heroes</p>
+    
+    <div class="heroes-container">
+        <div class="alert" *ngIf="error">
+            you trained this hero 5 times today, tomorrow you'll be able to train again
+        </div><br>
+            <app-heroes-display [email]="trainer.email"></app-heroes-display>
+    </div>  
+</div>

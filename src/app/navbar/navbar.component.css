@@ -1,0 +1,32 @@
+.logo {
+    height: 12vh;
+    width: 100%;
+    margin-bottom: 2px;
+    background-image: url("/assets/logo/6d7ef604-3b05-451e-ae44-d2c9649e7ab7_200x200.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30vh;
+}
+img {
+    width: 20vh;
+    height: 10vh;
+}
+.logout {
+    position:absolute;
+    right: 2vw;
+    top: 0.9vh;
+}
+
+
+@media screen and (max-width: 990px){
+    .logout{
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+}
+@media screen and (max-height: 530px){
+    .logo {
+        display: none;
+    }
+}
