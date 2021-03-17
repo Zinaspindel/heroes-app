@@ -1,6 +1,6 @@
 .display-selected-hero{
     z-index: 3;
-    height: 83%;
+    height: 90%;
     width: 400px;
     position: absolute;
     top:0;
@@ -44,7 +44,6 @@
     padding-top: 10px;
     width: 70%;
     margin: 0 auto;
-    min-width: 800px;
     height: 740px;
     overflow-y: scroll;
 }
@@ -93,5 +92,50 @@ img {
         width: 50%;
         height: 729.5px;
     }
+}
 
+@media screen and (max-width: 900px){
+    .heroesContainer{
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .display-selected-hero {
+        width: 95%;
+        height: 370px;
+    }
+    .heroesContainer{
+        width:100%;
+        height: 370px;
+    }
+}
+@media screen and (max-width: 390px ){
+    .display-selected-hero {
+        width: 95%;
+        height: 370px;
+    }
+    .heroesContainer{
+        width:100%;
+        height: 330px;
+    }
+}
+@media screen and (max-width: 370px ){
+    .display-selected-hero {
+        width: 95%;
+        height: 300px;
+    }
+}
+
+
+@media screen and (min-height: 1300px){
+    .heroesContainer{
+        height: 800px;
+        width:80%;
+    }
+}
+@media screen and (min-height: 1000px){
+    .heroesContainer{
+        height: 690px;
+    }
 }

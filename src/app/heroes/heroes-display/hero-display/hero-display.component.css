@@ -20,6 +20,11 @@ span {
     background-color: rgb(61, 59, 59);
     border-color: rgb(61, 59, 59);
 }
+span:hover{
+    background-color: rgb(148, 146, 146);
+    color:black;
+    border-color: rgb(148, 146, 146);
+}
 img {
     margin: 0 auto;
     height: 300px;
@@ -54,4 +59,74 @@ img {
     width: 94%;
     z-index: 1;
 }
+.animation {
+    height: 100px;
+    width: 150px;
+}
+.animation-container {
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    left: 0;
+    right:0;
+    z-index: 100;
+}
 
+@media screen and (max-width:540px){
+    .hero-img {
+        display: none;
+    }
+    .details-container{
+        margin-top: 30px;
+        height: 100%;
+    }
+    .animation {
+        height: 150px;
+        width: 200px;
+    }
+    .detail-container{
+        margin-top: 7px;
+    }
+    .larger {
+        height: 44px;
+    }
+
+}
+@media screen and (max-width:370px){
+    .details-container{
+        margin-top: 30px;
+        height: 70%;
+        font-size: small;
+    }
+    .detail-container{
+        height:20px;
+    }
+    .larger {
+        height: 40px;
+    }
+    .button-container {
+        padding-top: 15px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:300px){
+    .details-container{
+        margin-top: 30px;
+        height: 70%;
+        font-size: small;
+    }
+    .detail-container{
+        height:20px;
+    }
+    .detail{
+        width: 50%;
+    }
+    .larger {
+        height: 40px;
+    }
+    .button-container {
+        padding-top: 15px;
+        text-align: center;
+    }
+}

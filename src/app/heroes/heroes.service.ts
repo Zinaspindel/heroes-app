@@ -49,7 +49,6 @@ export class HeroesService {
         }
         if(hero.timesTrainedToday.length==5){
             if(hero.timesTrainedToday[4]==(new Date().getUTCDay())){
-                //error message - cant train no more
                 return false;
             }
             if(hero.timesTrainedToday[4]!=(new Date().getUTCDay())){

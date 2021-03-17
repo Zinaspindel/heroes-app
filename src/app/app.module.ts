@@ -18,7 +18,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { RouterModule } from '@angular/router';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,8 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule
   ],
   providers: [TrainerService, {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true}],
   bootstrap: [AppComponent]

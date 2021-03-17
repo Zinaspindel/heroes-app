@@ -1,9 +1,12 @@
 <div class="hero-container">
     <img src="{{hero.imgPath}}"
-        alt="{{hero.name}}"> 
+        alt="{{hero.name}}"
+        class="hero-img">    
     <p id="hero-name">{{hero.name}}</p>
-    <!-- <hr> -->
     <div class="details-container">
+        <div class="animation-container" *ngIf="showAnimation">
+            <img src="/assets/gif/trainingAnimation.gif" alt="trainingAnimation" class="animation">
+        </div>
         <div class="detail-container">
             <p class="detail">Ability:</p>
             <p class= "hero-details"*ngIf="hero.ability">Attacker</p>
@@ -34,5 +37,6 @@
         <div class="button-container">
             <span (click)="trainHero(hero)" class="btn btn-primary">Train Hero!</span>
         </div>
+        
     </div>
 </div>

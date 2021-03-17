@@ -20,8 +20,8 @@
                                 #password="ngModel"
                                 placeholder="Password"><br>
                         </div>
-                        <div class="alert" *ngIf="error"> {{ error }}</div>
-                        <div class="alert" *ngIf="!password.valid && password.touched">Password must be atleast 8 digits with capital letters and digits</div>
+                        <div class="alert alert-danger" *ngIf="error"> {{ error }}</div>
+                        <div class="alert alert-danger" *ngIf="!password.valid && password.touched">Password must be atleast 8 digits with capital letters and digits</div>
                         
                         </div>
                         <div class="controls">

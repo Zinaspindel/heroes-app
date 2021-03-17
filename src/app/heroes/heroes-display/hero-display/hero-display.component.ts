@@ -11,10 +11,20 @@ import { HeroesService } from '../../heroes.service';
 })
 export class HeroDisplayComponent implements OnInit {
   @Input() hero!: Hero;
+  animationSubscription:Subscription;
+  showAnimation: boolean = false;
 
   constructor(private heroesSerivce : HeroesService) { }
 
   ngOnInit(): void {
+    this.animationSubscription = this.heroesSerivce.trainingSuccessChanged.subscribe((trainingStatus)=>{
+      if(trainingStatus){
+        this.showAnimation = true;
+        setTimeout(()=>{
+          this.showAnimation = false;
+        },1200)
+      }
+    })
   }
   
   trainHero(hero:Hero){
